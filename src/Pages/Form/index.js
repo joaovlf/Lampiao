@@ -50,7 +50,8 @@ useEffect(()=>{
   const ChangeBol = (e)=>{
     const divs = e.target.form.children
     const btnSend = divs.btnSend
-   
+    const btn = divs.btn
+   console.log(count)
         switch (count) {
             case 0:
             if(divs[count].children[1].value !== ""){
@@ -72,7 +73,7 @@ useEffect(()=>{
                 break;
             case 2:
                 if(divs[count].children[1].value !== ""){
-                    console.log(count)
+                    
                     divs[count].style.display="none"
                     divs[count+1].style.display="block"
                     divs[count+1].lastChild.focus()
@@ -82,18 +83,19 @@ useEffect(()=>{
                 break;
                 case 3:
                 if(divs[count].children[1].value !== ""){
-                    console.log(count)
                     divs[count].style.display="none"
                     divs[count+1].style.display="block"
                     divs[count].lastChild.focus()
-                    setCount(3)
+                    setCount(count+1)
+                    btn.style.display = "none"
+                    btnSend.style.display="flex"
+                     
                 }else{
                     return setErr(true),setCount(3),divs[count].lastChild.focus()
                 }
                 break;
-
             default:
-                btnSend.style.display="block"
+                
                 break;
         }
         setCount(count+1)

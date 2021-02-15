@@ -32,60 +32,6 @@ body{
         
     }
 
-    .btn{
-               
-            background-color: rgb(230, 150, 30);
-            color:rgba(211, 211, 211);
-            font-size: 3rem;
-            border-radius: 0.5rem;
-            border: none;
-            width: 30vw;
-            animation-name:fade ;
-            animation-duration: 0.5s;
-            display:flex;
-            margin: 0 auto ;
-            justify-content: center;
-            align-items: center;
-                        
-    }
-
-    .btn:hover{
-      background-color:rgb(238, 166, 57);
-    }
-    .btnSend{
-            width: 40%;
-            font-size: 3rem;
-            border-radius: 5px;
-            border: none;   
-            background-color: rgb(230, 150, 30);
-            color:rgba(211, 211, 211);
-            display:flex;
-            margin: 0 auto ;
-            align-items: center;
-            justify-content: center;
-            
-          
-       
-    }
-    .btnSend:hover{
-        background-color:rgb(238, 166, 57);
-    }
-    .bg-btn{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
-        background-color:rgba(238, 166, 57, 0.2); 
-        
-        animation-name:fade ;
-        animation-duration: 0.5s;
-       
-        
-            
-    }
-    
     .form{
        
         animation-name:fade ;
