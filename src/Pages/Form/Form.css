@@ -1,0 +1,109 @@
+
+body{
+    background-color:rgb(31, 30, 30);
+    background-image:url('../../assets/img/lights.jpg');
+    background-position: fixed;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+    input{
+        width: 50vw;
+        font-size: 3rem;
+        color: rgb(230, 150, 30);
+        background-color: rgba(96, 99, 99, 0);
+        border: none;
+        outline:none;
+        box-shadow: 0 1px 0 rgb(230, 150, 30);
+    }
+
+    label{
+        color:rgba(211, 211, 211);
+        font-size: 3rem;
+        font-weight: bold;
+        animation-name:fade ;
+        animation-duration: 0.5s;
+        
+        
+        
+    }
+
+    .btn{
+               
+            background-color: rgb(230, 150, 30);
+            color:rgba(211, 211, 211);
+            font-size: 3rem;
+            border-radius: 0.5rem;
+            border: none;
+            width: 30vw;
+            animation-name:fade ;
+            animation-duration: 0.5s;
+            display:flex;
+            margin: 0 auto ;
+            justify-content: center;
+            align-items: center;
+                        
+    }
+
+    .btn:hover{
+      background-color:rgb(238, 166, 57);
+    }
+    .btnSend{
+            width: 40%;
+            font-size: 3rem;
+            border-radius: 5px;
+            border: none;   
+            background-color: rgb(230, 150, 30);
+            color:rgba(211, 211, 211);
+            display:flex;
+            margin: 0 auto ;
+            align-items: center;
+            justify-content: center;
+            
+          
+       
+    }
+    .btnSend:hover{
+        background-color:rgb(238, 166, 57);
+    }
+    .bg-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        background-color:rgba(238, 166, 57, 0.2); 
+        
+        animation-name:fade ;
+        animation-duration: 0.5s;
+       
+        
+            
+    }
+    
+    .form{
+       
+        animation-name:fade ;
+        animation-duration: 0.5s;
+        text-align: center;
+       margin-top: 30vh;
+        
+        
+
+        
+        
+    }
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform:translateY(100%)
+    }to{
+        opacity: 1;
+        transform:translateY(0)
+    }
+}

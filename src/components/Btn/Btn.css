@@ -1,0 +1,54 @@
+.btn{
+               
+    background-color: rgb(230, 150, 30);
+    color:rgba(211, 211, 211);
+    font-size: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    width: 30vw;
+    animation-name:fade ;
+    animation-duration: 0.5s;
+    display: inline;
+    margin:2%;
+    justify-content: center;
+    align-items: center;
+                
+}
+
+.btn:hover{
+background-color:rgb(238, 166, 57);
+}
+
+.btn:target{
+    animation-name: fade;
+}
+
+.btnSend{
+    width: 40%;
+    font-size: 3rem;
+    border-radius: 5px;
+    border: none;   
+    background-color: rgb(230, 150, 30);
+    color:rgba(211, 211, 211);
+    display:flex;
+    margin: 0 auto ;
+    align-items: center;
+    justify-content: center;
+    
+  
+
+}
+.btnSend:hover{
+background-color:rgb(238, 166, 57);
+}
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform:translateY(100%)
+    }to{
+        opacity: 1;
+        transform:translateY(0)
+    }
+}
